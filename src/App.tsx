@@ -1,11 +1,15 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './App.css';
+import  Home  from './components/Home';
 
 
-function App() {
+const App:React.FC=()=> {
+  const [todo, setTodo] = useState<String>("");
+
   return (
     <div className="App">
-      <h1>Welcome Back </h1>
+      <h1>TODO LIST</h1>
+      <Home />
     </div>
   );
 }
