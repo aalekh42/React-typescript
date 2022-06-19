@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Home = () => {
+interface Props{
+    todo:string;
+    setTodo:React.Dispatch<React.SetStateAction<string>>;
+  }
 
-
-    
+  //const Home :React.FC<Props>=({todo,setTodo}) OR const Home=({todo,setTodo}:Props)
+const Home :React.FC<Props>=({todo,setTodo}) => {
+  
   return (
     <>
         <div className='home-container fluid-container'>

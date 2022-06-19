@@ -4,12 +4,12 @@ import  Home  from './components/Home';
 
 
 const App:React.FC=()=> {
-  const [todo, setTodo] = useState<String>("");
-
+  const [todo, setTodo] = useState<string>("");//<string> is used to assign type
+  
   return (
     <div className="App">
       <h1>TODO LIST</h1>
-      <Home />
+      <Home todo={todo} setTodo={setTodo}/>
     </div>
   );
 }
